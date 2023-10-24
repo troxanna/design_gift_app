@@ -12,6 +12,7 @@ class AppTypography extends Equatable {
     required this.body15Semibold,
     required this.body13Medium,
     required this.body15Medium,
+    required this.body10Medium,
   });
 
   factory AppTypography.regular() => const AppTypography(
@@ -23,6 +24,7 @@ class AppTypography extends Equatable {
         body15Semibold: AppTextStyles.body15Semibold,
         body13Medium: AppTextStyles.body13Medium,
         body15Medium: AppTextStyles.body15Medium,
+        body10Medium: AppTextStyles.body10Medium,
       );
 
   final TextStyle headline1ExtraBold;
@@ -33,6 +35,7 @@ class AppTypography extends Equatable {
   final TextStyle body15Semibold;
   final TextStyle body13Medium;
   final TextStyle body15Medium;
+  final TextStyle body10Medium;
 
   @override
   List<Object?> get props => [
@@ -44,10 +47,12 @@ class AppTypography extends Equatable {
         body15Semibold,
         body13Medium,
         body15Medium,
+        body10Medium,
       ];
 
   AppTypography withColor(Color? color) => AppTypography(
-        headline1ExtraBold: AppTextStyles.headline1ExtraBold.apply(color: color),
+        headline1ExtraBold:
+            AppTextStyles.headline1ExtraBold.apply(color: color),
         body20Bold: AppTextStyles.body20Bold.apply(color: color),
         body15Bold: AppTextStyles.body15Bold.apply(color: color),
         body10Bold: AppTextStyles.body10Bold.apply(color: color),
@@ -55,5 +60,8 @@ class AppTypography extends Equatable {
         body15Semibold: AppTextStyles.body15Semibold.apply(color: color),
         body13Medium: AppTextStyles.body13Medium.apply(color: color),
         body15Medium: AppTextStyles.body15Medium.apply(color: color),
+        body10Medium: AppTextStyles.body10Medium.apply(color: color),
       );
 }
+
+

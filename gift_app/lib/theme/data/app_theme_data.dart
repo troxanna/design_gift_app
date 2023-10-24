@@ -24,7 +24,7 @@ class AppThemeData extends Equatable {
     required this.shadows,
     required this.icons,
     required this.radius,
-    required this.materialTheme,
+    required this.materialTheme, 
   });
 
   factory AppThemeData.light() => AppThemeData(
@@ -39,9 +39,9 @@ class AppThemeData extends Equatable {
       );
 
   factory AppThemeData.dark() => AppThemeData(
-        colorScheme: AppColorScheme.light(),
+        colorScheme: AppColorScheme.dark(),
         typography: AppTypography.regular(),
-        gradient: AppGradient.light(),
+        gradient: AppGradient.dark(),
         spacing: AppSpacing.regular(),
         shadows: const AppShadows(),
         icons: AppIcons.regular(),

@@ -35,7 +35,10 @@ class AppGradient extends Equatable {
   static const Gradient _secondaryLight = LinearGradient(
     begin: Alignment(0.00, -1.00),
     end: Alignment(0, 1),
-    colors: [Color(0xFFDEE7F3), Color(0xFFD0CEEE)],
+    colors: [
+      Color(0xFFDEE7F3),
+      Color(0xFFD0CEEE),
+    ],
   );
   static const Gradient _tertiaryLight = LinearGradient(
     begin: Alignment(1.00, -0.08),
@@ -66,8 +69,8 @@ class AppGradient extends Equatable {
     begin: Alignment(1.00, -0.08),
     end: Alignment(-1, 0.08),
     colors: [
-      Color(0x02E5E5E5),
-      Color(0xFFFDFDFD),
+      Color.fromRGBO(229, 229, 229, 0.01),
+      Color.fromRGBO(223, 223, 223, 1),
     ],
   );
 

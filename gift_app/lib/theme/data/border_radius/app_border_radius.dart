@@ -6,6 +6,7 @@ class AppBorderRadius extends Equatable {
     required this.radius22,
     required this.radius25,
     required this.radiusHorizontal5,
+    required this.radiusTop22,
   });
 
   factory AppBorderRadius.regular() => const AppBorderRadius(
@@ -19,16 +20,22 @@ class AppBorderRadius extends Equatable {
           left: Radius.circular(5),
           right: Radius.circular(5),
         ),
+        radiusTop22: BorderRadius.only(
+          topLeft: Radius.circular(22),
+          topRight: Radius.circular(22),
+        ),
       );
 
   final BorderRadius radius22;
   final BorderRadius radius25;
   final BorderRadius radiusHorizontal5;
+  final BorderRadius radiusTop22;
 
   @override
   List<Object?> get props => [
         radius22,
         radius25,
-        radiusHorizontal5
+        radiusHorizontal5,
+        radiusTop22
       ];
 }

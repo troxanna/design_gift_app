@@ -16,18 +16,22 @@ class AppTextStyles {
     fontStyle: FontStyle.normal,
     fontWeight: FontWeight.w700,
     fontSize: 20,
+    letterSpacing: 0.20,
   );
-  static const TextStyle body15Bold = TextStyle(
+  static const  TextStyle body15Bold = TextStyle(
     fontFamily: _fontFamily,
     fontStyle: FontStyle.normal,
     fontWeight: FontWeight.w700,
     fontSize: 15,
   );
+
   static const TextStyle body10Bold = TextStyle(
     fontFamily: _fontFamily,
     fontStyle: FontStyle.normal,
     fontWeight: FontWeight.w700,
-    fontSize: 10
+    fontSize: 10,
+    height: 1.4,
+    letterSpacing: -0.15,
   );
   static const TextStyle body20ExtraBold = TextStyle(
     fontFamily: _fontFamily,
@@ -46,6 +50,14 @@ class AppTextStyles {
     fontStyle: FontStyle.normal,
     fontWeight: FontWeight.w500,
     fontSize: 13,
+  );
+  static const TextStyle body10Medium = TextStyle(
+    fontFamily: _fontFamily,
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.w500,
+    fontSize: 10,
+    height: 1.4,
+    letterSpacing: -0.15,
   );
   static const TextStyle body15Medium = TextStyle(
     fontFamily: _fontFamily,
